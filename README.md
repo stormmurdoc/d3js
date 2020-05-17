@@ -1,2 +1,8 @@
 # d3js
-Bubble charts &amp; more
+
+People Dashboard
+
+![People Dashboard](./media/people_dashboard.png)
+
+
+

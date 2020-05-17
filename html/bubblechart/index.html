@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Bubble Chart</title>
+<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAvxFiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREAAAERERERERAAERAAAAAAEQEQAAARAAABERAAABEAAAEREAAAEQAAAREQAAARAAABERAAABEAAAEREAAAEQAAAREQAAARAAABERAAAAAAAAEREAAAEQAAAREQAAARAAABEBEAAAAAABEAAREREREREAAAEREREREADgBwAAwAMAAI/5AAA+fAAAPnwAAD58AAA+fAAAPnwAAD58AAA+fAAAP/wAAD58AAA+fAAAn/kAAMADAADgBwAA" rel="icon" type="image/x-icon" />
+<body style="background: #000000">
+     <style>
+    .observablehq {
+      width: 600px;
+      margin: 0 auto;
+    }
+    .observablehq h1 {
+       color: #ffffff;
+       text-align: center;
+       font:
+    }
+body {
+   font-family: 'Arial';
+}
+
+    .observablehq svg{
+      background: #000000;
+    }
+  </style>
+
+<body>
+   <script type="module">
+      import define from "./index.js";
+      import {Runtime, Library, Inspector} from "./runtime.js";
+      const runtime = new Runtime();
+      const main = runtime.module(define, Inspector.into(document.body));
+   </script>
+   <div class="observablehq"/></div>
+</body>
+</html>

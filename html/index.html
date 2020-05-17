@@ -3,8 +3,7 @@
 <head>
   <title>Bubble Chart Prototype</title>
   <meta charset="utf-8">
-<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAvxFiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREAAAERERERERAAERAAAAAAEQEQAAARAAABERAAABEAAAEREAAAEQAAAREQAAARAAABERAAABEAAAEREAAAEQAAAREQAAARAAABERAAAAAAAAEREAAAEQAAAREQAAARAAABEBEAAAAAABEAAREREREREAAAEREREREADgBwAAwAMAAI/5AAA+fAAAPnwAAD58AAA+fAAAPnwAAD58AAA+fAAAP/wAAD58AAA+fAAAn/kAAMADAADgBwAA" rel="icon" type="image/x-icon" />
-
+  <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAvxFiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREAAAERERERERAAERAAAAAAEQEQAAARAAABERAAABEAAAEREAAAEQAAAREQAAARAAABERAAABEAAAEREAAAEQAAAREQAAARAAABERAAAAAAAAEREAAAEQAAAREQAAARAAABEBEAAAAAABEAAREREREREAAAEREREREADgBwAAwAMAAI/5AAA+fAAAPnwAAD58AAA+fAAAPnwAAD58AAA+fAAAP/wAAD58AAA+fAAAn/kAAMADAADgBwAA" rel="icon" type="image/x-icon" />
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,200italic,600italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 
   <script src="http://phuonghuynh.github.io/js/bower_components/jquery/dist/jquery.min.js"></script>
@@ -18,19 +17,6 @@
   <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/central-click/central-click.js"></script>
   <script src="http://phuonghuynh.github.io/js/bower_components/bubble-chart/src/plugins/lines/lines.js"></script>
   <script src="index.js"></script>
-   <script>
-    d3.csv('files.csv', function(error, data) {
-      if (error) {
-          console.error('Error getting or parsing the data.');
-          throw error;
-      }
-      // selection.datum() returns the bound datum for the first element in the selection and
-      //  doesn't join the specified array of data with the selected elements
-      var chart = bubbleChart().width(600).height(400);
-       d3.select('#bubbleChart').datum(data).call(chart);
-    });
-   </script>
-
   <style>
     .bubbleChart {
       width: 600px;
@@ -40,7 +26,6 @@
       background: #000000;
     }
   </style>
-
 </head>
 <body style="background: #000000">
 <div class="bubbleChart"/>

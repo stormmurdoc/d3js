@@ -13,16 +13,16 @@ $(document).ready(function () {
     //circleColor: use @default
     data: {
       items: [
-        {text: "Ergebnisorientierung", count: "100"},
+        {text: "Belastbarkeit", count: "100"},
         {text: "Empathie", count: "10"},
         {text: "Durchsetzungsfähigkeit", count: "50"},
-        {text: "Php", count: "10"},
-        {text: "Ruby", count: "10"},
-        {text: "D", count: "20"},
-        {text: "Python", count: "30"},
-        {text: "C/C++", count: "2"},
-        {text: "Pascal", count: "10"},
-        {text: "Something", count: "10"},
+        {text: "Engagement", count: "10"},
+        {text: "Motivation", count: "10"},
+        {text: "Neugierde", count: "20"},
+        {text: "Teamfähigkeit", count: "30"},
+        {text: "Selbstbewußtsein", count: "2"},
+        {text: "Zuverlässigkeit", count: "10"},
+        {text: "Leidenschaft", count: "10"},
       ],
       eval: function (item) {return item.count;},
       classed: function (item) {return item.text.split(" ").join("");}
