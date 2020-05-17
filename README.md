@@ -2,7 +2,7 @@
 
 People Dashboard
 
-![People Dashboard](./media/people_dashboard.png)
+![People Dashboard](./.media/people_dashboard.png)
 
 
 
